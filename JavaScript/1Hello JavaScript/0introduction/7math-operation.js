@@ -52,5 +52,3 @@ console.log(first,second);
 //approach2===Destructuring
 [first, second]=[second,first];
 console.log(first,second);
-
-
