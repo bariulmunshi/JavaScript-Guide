@@ -16,7 +16,7 @@
 - Break Statement
 - Continue Statement 
 4. No modules 
-5. Core concepts of Functions and Arrays 
+5. Core concepts of Functions and objects 
 - Functions in JavaScript
 - Functions Parameters & Function Return 
 - Objects in JavaScript
