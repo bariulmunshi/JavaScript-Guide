@@ -4,7 +4,8 @@
 # What's let,const?
 1. 
 # What's Variable? 5 things you need to declare a variable
-1. 
+1. কোনও একটা value যেকোনো সময় কাজে লাগানোর জন্য সংরক্ষণ করার মতো একটা জায়গা হোল variable.
+
 # What's Data type, Numeric, String, Boolean?
 ```sh
 var price =200;

@@ -23,6 +23,9 @@ var myBudget=800000;
 if(carPrice<myBudget){
   console.log('I will buy the car');
 }
+else{
+  console.log("I can't buy the car");
+}
      // (multi condition)
 var permissionBuyCar=true;
 if(carPrice<myBudget || permissionBuyCar==true){
