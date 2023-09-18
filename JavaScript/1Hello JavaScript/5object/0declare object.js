@@ -1,7 +1,7 @@
 var student = {
   id: "201-15-3314",
   name: "Md. Bariul Munshi",
-  phone: 01756346427,
+  phone: '01756346427',
   address: "Dhaka",
 };
 
@@ -20,3 +20,5 @@ var book = {
   page: 120,
   publisher: "penguin",
 };
+console.log(student,mobile,book);
+

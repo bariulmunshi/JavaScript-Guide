@@ -1,4 +1,4 @@
-
+// Structure of the Function
 /* function functionName(parameters){
   //function body
   //return

@@ -1,6 +1,8 @@
 # Table of Contents
 # What's JavaScript?
-1. 
+1. A script language that allows to implement complex  features on web pages.
+2. Can be said as a programming language for the web. 
+3. More interactive web pages,interpreted language and runs on client's side computers.
 # What's let,const?
 1. 
 # What's Variable? 5 things you need to declare a variable
