@@ -2,6 +2,7 @@
  # What's loop?
  # // while loop, debug and understand while loop
  1. Example-1
+ ```
   var roastGiven=0;
   while(roastGiven<7){
   console.log( 'Roast den,Please!!')
@@ -9,6 +10,7 @@
   // roastGiven=roastGiven+1;
   // roastGiven+=1;
   roastGiven++;}
+ ```
 # while loops, odd numbers, even numbers print even numbers 
 1. Odd numbers
 var number = 1;
