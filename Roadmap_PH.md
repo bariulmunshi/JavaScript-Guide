@@ -20,7 +20,7 @@
 - Functions in JavaScript
 - Functions Parameters & Function Return 
 - Objects in JavaScript
-6. Apply JavaScript concepts 
+6. Apply JavaScript concepts
 - Var, let and Constants
 - Fibonacci Series
 - Problem Solving Task
@@ -34,6 +34,6 @@
 - More Problem solving tasks
 - Array Splice 
 - More Problem solving tasks
-9. More JavaScript Coding Problems  
+9. More JavaScript Coding Problems
 10. No modules
 11. Assignment 

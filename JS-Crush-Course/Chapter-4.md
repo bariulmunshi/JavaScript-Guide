@@ -3,7 +3,9 @@
 - function parameters value is is available within the function
 # Table of Contents
 # what's function? 
-1. 
+1. A block of code
+2. A set of Statements(subprogram/block of code) that performs a task when it's called.
+3. Maintains a relationship with input and output
 # Everything you need to know about return from a function
 ```sh
 // Structure of the function
