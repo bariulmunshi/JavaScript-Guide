@@ -10,11 +10,11 @@
 for (i = 0; i < numbers.length; i++) {
   var number = numbers[i];
   console.log(number);
-  if (number > 1000) {
+  if (number > 100) {
     break;
   }
 } */
-var numbers = [12, 124, 433, 33, 3, 32, 13, 43, 23, 100, 43];
+ var numbers = [12, 124, 433, 33, 3, 32, 13, 43, 23, 100, 43];
 for (i = 0; i < numbers.length; i++) {
   var number = numbers[i];
 
@@ -22,4 +22,4 @@ for (i = 0; i < numbers.length; i++) {
     continue; 
   }
   console.log(number);
-}
+} 

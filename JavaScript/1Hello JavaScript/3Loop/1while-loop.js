@@ -5,7 +5,7 @@ while(roastGiven<7){
   console.log(roastGiven);
   // roastGiven=roastGiven+1;
   // roastGiven+=1;
-  roastGiven++;
+  roastGiven++;}
    */
 
 /* More while loops, odd numbers, even numbers
