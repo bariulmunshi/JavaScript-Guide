@@ -13,19 +13,24 @@
  ```
 # while loops, odd numbers, even numbers print even numbers 
 1. Odd numbers
+```sh
 var number = 1;
 while (number < 100) {
   console.log(number);
   number += 2;
 }
+```
 2. Even numbers
+```sh
 var number = 2;
 while (number < 100) {
   console.log(number);
   number += 2;
 }
+```
 # For loop, how for loop works, while vs for loop
 1. // while vs for loop
+```sh
 var roastGiven=0;
 while(roastGiven<7){
   console.log( 'Roast den,Please!!')
@@ -39,20 +44,28 @@ while(roastGiven<7){
   console.log(roastGiven);
   console.log("Roast den,Please!!");
 } 
+```
 2. // short variable
+```sh
 for (i = 0; i < 7; i++) {
   console.log(i);
 }
+```
 3. //  even number
+```sh
 for (i = 2; i < 100; i += 2) {
   console.log(i);
 }
+```
 4. // odd number
+```sh
 for (i = 1; i < 100; i += 2) {
   console.log(i);
 }
+```
 # Run a loop for each element of an array
 1. example-1
+```sh
 var number = [23, 2, 3, 233, 2, 3, 222,3, 233, 2, 3,3];
 for (i = 0; i < 7; i++) {
   console.log(number[i]);
@@ -69,16 +82,20 @@ for (var i = 0; i < object.length; i++) {
   item = object[i];
   console.log(item);
 }
+```
 # while and for loop break and continue
 1. // loop break
+```sh
 for (i = 0; i < 10; i++) {
   console.log(i);
   if (i == 5) {
     break;
   }
 } 
+```
 2. // array break and continue
 - //break
+```sh
 var numbers = [12, 124, 433, 33, 3, 32, 13, 43, 23, 100, 43];
 for (i = 0; i < numbers.length; i++) {
   var number = numbers[i];
@@ -87,7 +104,9 @@ for (i = 0; i < numbers.length; i++) {
     break;
   }
 }  
+```
 - //continue
+```sh
 var numbers = [12, 124, 433, 33, 3, 32, 13, 43, 23, 100, 43];
 for (i = 0; i < numbers.length; i++) {
   var number = numbers[i];
@@ -97,9 +116,11 @@ for (i = 0; i < numbers.length; i++) {
   }
   console.log(number);
 } 
+```
 
 # Understand for and while loop in a reverse way
 1. Example-1
+```sh
 /* var num=0;
 while(num<10){
   console.log(num);
@@ -111,3 +132,4 @@ while(num>1){
   console.log(num);
   num--;
 }
+```

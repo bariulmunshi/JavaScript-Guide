@@ -36,9 +36,12 @@ console.log(student);
 
 # Difference between array and object
 - //array
+```sh
 var friendsAge=[22,1,2,23,31];
+```
 
 - // object
+```sh
 var friendsAge={
   bariul:22,
   hasib:1,
@@ -46,6 +49,7 @@ var friendsAge={
   mamun:23,
   kasfi:31
 }
+```
 #  multiple ways to get and set object property
 ```sh
 var shoppingCart={
