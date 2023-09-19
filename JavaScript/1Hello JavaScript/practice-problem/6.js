@@ -1,4 +1,4 @@
-/* Problelm-1: Standard height of a volleyball player is 7 feet. Jim wants to join the volleyball team, so decided to measure his height to see if he meets the standard. Calculate his height in feet
+/* Problelm-1: The Standard height of a volleyball player is 7 feet. Jim wants to join the volleyball team, so decided to measure his height to see if he meets the standard. Calculate his height in feet.
 input: Jim heiht 84 inch  */
 
 /* function inchToFeet(inches){

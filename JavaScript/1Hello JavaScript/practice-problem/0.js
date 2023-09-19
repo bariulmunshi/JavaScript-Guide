@@ -12,5 +12,3 @@ console.log(typeof isIndependent);
 console.log(typeof student);
 console.log(typeof add);
 console.log(Array.isArray(friends));
-
-
