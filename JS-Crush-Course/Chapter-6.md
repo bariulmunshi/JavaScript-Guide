@@ -121,4 +121,26 @@ let myfactorialValue1 = 5;
 let myfactorialValueresult1 = getFactorial3(myfactorialValue1);
 console.log("Value of 5! reverse is:", myfactorialValueresult1); 
  ```
- 
+9. String comparison using toLowerCase toUpperCase
+```sh
+ const unserName='blackPink';
+const unserInput='blackPinK';
+console.log(unserInput.toUpperCase()); //for make value uppercase
+console.log(unserInput.toLowerCase()); //for make value lowercase
+if(unserName.toLowerCase==unserInput.toLowerCase){
+  console.log('valid user');
+}
+else{
+  console.log('Invalid User');
+} 
+```
+10. Apply Search includes, indexOf, startswith, endswith
+```sh
+1. Example-1:
+// JavaScript String includes()
+let text = "Hello world, welcome to this universe.";
+let result = text.includes("world");
+console.log(result); 
+2. Example-2:
+
+```
