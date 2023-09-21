@@ -136,11 +136,57 @@ else{
 ```
 10. Apply Search includes, indexOf, startswith, endswith
 ```sh
-1. Example-1:
+1. Example-1:includes
 // JavaScript String includes()
 let text = "Hello world, welcome to this universe.";
 let result = text.includes("world");
 console.log(result); 
-2. Example-2:
+2. Example-2:includes
+const lyrics="tumi bondhu kala pakhi ami jeno ki bosonter kale tomake bolte parini";
 
+const searchString ='PakhI';
+// const doesExist=lyrics.includes('pakhi');
+// const doesExist=lyrics.includes('Pakhi');
+// const doesExist =lyrics.includes(searchString);
+/* const lyricsLowerCase =lyrics.toLowerCase();
+const searchStringLowerCase =searchString.toLowerCase();
+const doesExist=lyricsLowerCase.includes(searchStringLowerCase); */
+// console.log(doesExist);
+// or
+const doesExistOneLine=lyrics.toLowerCase().includes(searchString.toLowerCase());
+console.log(doesExistOneLine);
+
+2. Example-3:all together
+const lyrics="tumi bondhu kala pakhi ami jeno ki bosonter kale tomake bolte parini";
+
+const searchString ='PakhI';
+// const doesExist=lyrics.includes('pakhi');
+// const doesExist=lyrics.includes('Pakhi');
+// const doesExist =lyrics.includes(searchString);
+/* const lyricsLowerCase =lyrics.toLowerCase();
+const searchStringLowerCase =searchString.toLowerCase();
+const doesExist=lyricsLowerCase.includes(searchStringLowerCase); */
+// console.log(doesExist);
+// or
+const doesExistOneLine=lyrics.toLowerCase().includes(searchString.toLowerCase());
+// console.log(doesExistOneLine);
+
+// IndexOf
+console.log(lyrics.indexOf('kala'));
+console.log(lyrics.indexOf('nai'));
+console.log(lyrics.indexOf('tumi'));
+
+if(lyrics.indexOf('sada')!=-1){
+    console.log('sada found');
+}
+else{
+    console.log('sada not found');
+};
+// startWith output=true or false
+console.log(lyrics.startsWith('tumi'))
+
+// endWith output=true or false
+const fileName='mybiodata.pdf';
+const otherFile='mypic.png';
+console.log(fileName.endsWith('.pdf'))
 ```
