@@ -121,4 +121,118 @@ let myfactorialValue1 = 5;
 let myfactorialValueresult1 = getFactorial3(myfactorialValue1);
 console.log("Value of 5! reverse is:", myfactorialValueresult1); 
  ```
- 
+9. String comparison using toLowerCase toUpperCase
+```sh
+ const unserName='blackPink';
+const unserInput='blackPinK';
+console.log(unserInput.toUpperCase()); //for make value uppercase
+console.log(unserInput.toLowerCase()); //for make value lowercase
+if(unserName.toLowerCase==unserInput.toLowerCase){
+  console.log('valid user');
+}
+else{
+  console.log('Invalid User');
+} 
+```
+10. Apply Search includes, indexOf, startswith, endswith
+```sh
+1. Example-1:includes
+// JavaScript String includes()
+let text = "Hello world, welcome to this universe.";
+let result = text.includes("world");
+console.log(result); 
+2. Example-2:includes
+const lyrics="tumi bondhu kala pakhi ami jeno ki bosonter kale tomake bolte parini";
+
+const searchString ='PakhI';
+// const doesExist=lyrics.includes('pakhi');
+// const doesExist=lyrics.includes('Pakhi');
+// const doesExist =lyrics.includes(searchString);
+/* const lyricsLowerCase =lyrics.toLowerCase();
+const searchStringLowerCase =searchString.toLowerCase();
+const doesExist=lyricsLowerCase.includes(searchStringLowerCase); */
+// console.log(doesExist);
+// or
+const doesExistOneLine=lyrics.toLowerCase().includes(searchString.toLowerCase());
+console.log(doesExistOneLine);
+
+2. Example-3:all together
+const lyrics="tumi bondhu kala pakhi ami jeno ki bosonter kale tomake bolte parini";
+
+const searchString ='PakhI';
+// const doesExist=lyrics.includes('pakhi');
+// const doesExist=lyrics.includes('Pakhi');
+// const doesExist =lyrics.includes(searchString);
+/* const lyricsLowerCase =lyrics.toLowerCase();
+const searchStringLowerCase =searchString.toLowerCase();
+const doesExist=lyricsLowerCase.includes(searchStringLowerCase); */
+// console.log(doesExist);
+// or
+const doesExistOneLine=lyrics.toLowerCase().includes(searchString.toLowerCase());
+// console.log(doesExistOneLine);
+
+// IndexOf
+console.log(lyrics.indexOf('kala'));
+console.log(lyrics.indexOf('nai'));
+console.log(lyrics.indexOf('tumi'));
+
+if(lyrics.indexOf('sada')!=-1){
+    console.log('sada found');
+}
+else{
+    console.log('sada not found');
+};
+// startWith output=true or false
+console.log(lyrics.startsWith('tumi'))
+
+// endWith output=true or false
+const fileName='mybiodata.pdf';
+const otherFile='mypic.png';
+console.log(fileName.endsWith('.pdf'))
+```
+11. How to split, slice, substr, substring, concat, join
+```sh
+//split
+const lyrics="tumi bondhu kala pakhi. ami jeno ki bosonter kale tomake bolte parini";
+const letter = lyrics.split(""); //letter
+const word = lyrics.split(" ");
+const sentences= lyrics.split(".");//sentences
+// console.log(sentences);
+
+//slice
+
+const lyrics2="tumi bondhu kala pakhi. ami jeno ki bosonter kale tomake bolte parini";
+const sentences1= lyrics2.slice(0,10);
+const sentences2= lyrics2.slice(5,10);
+console.log(sentences2);
+
+//substr
+
+const lyrics3="tumi bondhu kala pakhi. ami jeno ki bosonter kale tomake bolte parini";
+const sentences3= lyrics3.substring(5,10);
+console.log(sentences3);
+
+//concat
+
+const str1 = 'Hello';
+const str2 = 'World';
+
+console.log(str1.concat(' ', str2));
+// Expected output: "Hello World"
+
+console.log(str2.concat(', ', str1));
+// Expected output: "World, Hello"
+
+//join
+const elements = ['Fire', 'Air', 'Water'];
+
+console.log(elements.join());
+// Expected output: "Fire,Air,Water"
+
+console.log(elements.join(''));
+// Expected output: "FireAirWater"
+
+console.log(elements.join('-'));
+// Expected output: "Fire-Air-Water"
+
+```
