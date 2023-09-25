@@ -236,3 +236,67 @@ console.log(elements.join('-'));
 // Expected output: "Fire-Air-Water"
 
 ```
+12. write a function that will take 3 numbers will return the max number using math.min and math.max
+```sh
+function findMax(num1, num2, num3) {
+  return Math.max(num1, num2, num3);
+}
+const maxNum = findMax(13, 79, 45);
+console.log(maxNum); // Output: 79 
+```
+13. Who is the tallest? Find the max number in an array
+```sh
+function maxInArray(number) {
+  let largest = number[0];
+  for (let i = 0; i < number.length; i++) {
+    const index = i;
+    const element = number[index];
+    if (element > largest) {
+      largest = element;
+    }
+  }
+  return largest;
+}
+const heights = [121, 124, 125, 164, 156, 164];
+const tallest = maxInArray(heights);
+console.log("tallest person is:", tallest);
+```
+14. Reverse a string and Reverse words in a sentence
+```sh
+// Reverse a string and Reverse words in a sentence
+ 
+//Reverse a string
+/* function reverseString(text){
+  let reversed='';
+  for(let i=text.length-1; i>=0;i--){
+    const element=text[i];
+    reversed=reversed+element;
+    console.log(element,reversed);
+  }
+  return reversed;
+}
+const myString= 'I am a good boy';
+const reversed=reverseString(myString);
+console.log('Reversed output string:',reversed); */ 
+
+// Reverse words in a sentence
+ /* function reversedWords(str){
+  const words=str.split(' ');
+  const result=[];
+  for(let i=words.length-1; i>=0; i--){
+    const element=  words[i];
+    result.push(element);
+  }
+  console.log(result);
+}
+const myString= 'I am a good boy';
+reversedWords(myString);  */
+```
+15. Fibonnacci series problem
+```sh
+const fibo =[0,1];
+for (let i=2; i<=10; i++){
+  fibo[i]=fibo[i-1]+ fibo[i-2];
+}
+console.log(fibo);
+```

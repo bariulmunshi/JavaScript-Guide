@@ -77,7 +77,7 @@ const newPara= lines.join(':'); //join
 // console.log(newPara);
 
 
-             // Reverse a string and Reverse words in a sentence
+// Reverse a string and Reverse words in a sentence
 /* 
 //Reverse a string
 function reverseString(text){

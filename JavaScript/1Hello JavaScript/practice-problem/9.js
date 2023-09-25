@@ -1,4 +1,4 @@
-              // Who is the tallest? Find the max number in an array
+// Who is the tallest? Find the max number in an array
 function maxInArray(number){
   let largest=number[0];
   for(let i=0; i<number.length;i++){
