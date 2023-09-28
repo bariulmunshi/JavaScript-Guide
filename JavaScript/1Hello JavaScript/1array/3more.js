@@ -40,7 +40,7 @@ else{
   console.log('No')
 } */
 
-              //Remove duplicate items from an array
+//Remove duplicate items from an array
 /* const names=['abul','babul','asif','fokir','abul','babul','monir']
 function remoteDuplicate(names){
   const unique=[];

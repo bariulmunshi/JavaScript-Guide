@@ -190,7 +190,7 @@ const fileName='mybiodata.pdf';
 const otherFile='mypic.png';
 console.log(fileName.endsWith('.pdf'))
 ```
-11. How to split, slice, substr, substring, concat, join
+11. How to split, slice,splice, substr, substring, concat, join
 ```sh
 //split
 const lyrics="tumi bondhu kala pakhi. ami jeno ki bosonter kale tomake bolte parini";
@@ -205,6 +205,24 @@ const lyrics2="tumi bondhu kala pakhi. ami jeno ki bosonter kale tomake bolte pa
 const sentences1= lyrics2.slice(0,10);
 const sentences2= lyrics2.slice(5,10);
 console.log(sentences2);
+//splice 
+//step-1:
+const friends = [23,24,56,44,233,56,12,11,34,6];
+const partial=friends.splice(2,4);
+console.log(partial);
+console.log(friends);
+//step-2:
+const friends1 = [23,24,56,44,233,56,12,11,34,6];
+const partial1=friends1.splice(2,4,32,'hello world');
+console.log(partial1);
+console.log(friends1);
+
+//more examples:
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, add 2 elements: 
+const newFruits=fruits.splice(2, 0, "Lemon", "Kiwi");
+console.log(fruits);
 
 //substr
 
@@ -299,4 +317,175 @@ for (let i=2; i<=10; i++){
   fibo[i]=fibo[i-1]+ fibo[i-2];
 }
 console.log(fibo);
+```
+16. Remove duplicate items from an array
+```sh
+const names=['abul','babul','asif','fokir','abul','babul','monir']
+function remoteDuplicate(names){
+  const unique=[];
+  for(let i=0; i<names.length;i++){
+    const name=names[i];
+    if(unique.includes(name)===false){
+      unique.push(name);
+    }
+  }
+  return unique;
+}
+const uniqueNames=remoteDuplicate(names);
+console.log(uniqueNames); 
+```
+17. foo bar foobar math problem using for loops
+```sh
+/* 
+1.show output from 1-50
+2.if the number is divisible by 3 then instead of the number show 'foo'
+3.if the number is divisible by 5 then instead of the number show 'bar'
+4.if the number is divisible by 3 and 5 both then instead of the number show 'foobar'
+ */
+ for(let i=1;i<=50;i++){
+  if(i%3==0 && i%5==0){
+    console.log('foobar');
+  }
+  else if(i%3==0){
+    console.log('foo');
+  }
+  else if(i%5==0){
+    console.log('bar');
+  }
+  else{
+    console.log(i);
+  }
+} 
+```
+18. Wood calculation using Function
+```sh
+/* 
+
+fixed: Per Item Wood Requirements
+1. Chair -->3 cft
+2. Table --> 10 cft
+3. Bed --> 50 cft
+
+vary: Quantity
+
+*/
+function woodCalculator(chairQuantity, tableQuantity, bedQuantity){
+    const perChairWood=3;
+    const perTableWood=10;
+    const perBedWood=50;
+    const chairWood=perChairWood+chairQuantity; 
+    const tableWood=perTableWood*tableQuantity;
+    const bedWood=perBedWood*bedQuantity;
+    const totalWood=chairWood+tableWood+bedWood;
+    return totalWood;
+}   
+const totalWood=woodCalculator(2,2,5);
+console.log('Total Wood Requirement:',totalWood);
+```
+19. Find the cheapest phone from an array of phone objects
+```sh
+const phones = [
+    {
+        name: 'Samsung',
+        camera: '12',
+        storage: '32gb',
+        price: 3600,
+        color: 'red'
+    },
+    {
+        name: 'Walton',
+        camera: '10',
+        storage: '32gb',
+        price: 3000,
+        color: 'Green'
+    },
+    {
+        name: 'iphone',
+        camera: '16',
+        storage: '32gb',
+        price: 336000,
+        color: 'Silver'
+    },
+    {
+        name: 'Xiaomi',
+        camera: '20',
+        storage: '32gb',
+        price: 3800,
+        color: 'white'
+    },
+    {
+        name: 'Samsung',
+        camera: '12',
+        storage: '32gb',
+        price: 4000,
+        color: 'red'
+    },
+    {
+        name: 'Oppo',
+        camera: '10',
+        storage: '32gb',
+        price: 3900,
+        color: 'Neon'
+    },
+    {
+        name: 'Realme',
+        camera: '16',
+        storage: '128gb',
+        price: 30000,
+        color: 'Blue'
+    }
+]
+
+function cheapestPhone(phones) {
+    let cheapest=phones[0];
+    for (let i = 0; i < phones.length; i++) {
+        const phone = phones[i];
+        if (phone.price < cheapest.price) {
+            cheapest = phone;
+        }
+    }
+    return cheapest;    
+}
+
+const mySelection = cheapestPhone(phones);
+console.log(mySelection);
+```
+20. Calculate the total cost of the products in a shopping cart
+```sh
+const shoppingCart=[
+    {
+        name:'shoes',
+        price:1500,
+        quantity:'5'
+    },
+    {
+        name:'shirts',
+        price:1000,
+        quantity:'2'
+    },
+    {
+        name:'Pants',
+        price:1700,
+        quantity:'9'
+    },
+    {
+        name:'T-Shirts',
+        price:500,
+        quantity:'2'
+    }
+];
+
+function totalCost(products){
+    sum=0;
+  for(let i=0;i<products.length;i++){
+    const product=products[i] 
+    const productTotal=product.price*product.quantity;       
+    // sum+=product.price;
+    sum=sum+productTotal;
+  }
+  return sum;
+}
+
+const expense=totalCost(shoppingCart);
+console.log('Total expense today', expense);
 ```
