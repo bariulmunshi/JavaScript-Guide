@@ -3,6 +3,11 @@
 1. A script language that allows to implement complex  features on web pages.
 2. Can be said as a programming language for the web. 
 3. More interactive web pages,interpreted language and runs on client's side computers.
+4. high-level,Interpreted programming language.It makes web pages more interactive.We can use JavaScript to make animations.
+5. Variable like a box that store things. There are five types of variables 1.primitive(number, string, boolean, null and undefined) 2.non-primitive(object,array,function).
+6. JavaScript keywords are reserved words and they can not be used as variable name and function name.
+7. Camel case,SnakeCase and pascal case are the three most common naming conventions.
+8. Variables names are case insensitive
 # What's let,const?
 1. 
 # What's Variable? 5 things you need to declare a variable
