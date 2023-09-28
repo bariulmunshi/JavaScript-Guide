@@ -1,4 +1,4 @@
-         // Math, abs, pow, round, ceil, floor, and random number
+// Math, abs, pow, round, ceil, floor, and random number
 
 const result=Math.pow(5,2); //math
 // console.log(result);
@@ -36,7 +36,7 @@ for(let i=0; i<20;i++){
 // console.log(Math.PI); //PI
 
 
-                // Swap variable, swap without temp, destructing
+// Swap variable, swap without temp, destructing
 let first=5;
 let second=7;
 console.log(first,second);
