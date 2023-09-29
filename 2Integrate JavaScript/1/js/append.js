@@ -1,4 +1,4 @@
-console.log('e'); 
+console.log('This text from Append file'); 
 // Create HTML elements using Javascript and appendChild
 //step-1:where to add
 const placesList=document.getElementById('places-list');

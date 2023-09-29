@@ -2,10 +2,54 @@
 - [DOM](#dom)
 # DOM
 ## What's DOM defines?
+- JavaScript Dom/document এর সাহায্য HTML এর প্রতিটা element কে manipulate করে |
+- HTML এর element গুলিকে DOM এর সাহায্য Objects  বানিয়ে JavScript manipulate করে
+  - Example:
+  `Input:`
+  ```sh
+  const liCollection = document.getElementsByTagName("li");
+      console.log(liCollection);
+  ```
+>`output`: Array Like object
+![DOM](images/photo2.png)
+  - In More:
+  `Input::`
+  ```sh
+  const liCollection = document.getElementsByTagName("li");
+      console.log(liCollection);
+      for (const li of liCollection) {
+        console.log(li);
+      }
+  ```
+  `Output:`
+  ![DOM](images/photo3.png)
+  - In More More Details:
+  `Input::`
+  ```sh
+  const liCollection = document.getElementsByTagName("li");
+      console.log(liCollection);
+      for (const li of liCollection) {
+        console.log(li.innerText);
+      }
+  ```
+  `Output:`
+  ![DOM](images/photo4.png)
+
+
+
+![DOM](images/photo1.png)
+## What can JavaScript do with DOM? 
+- JavaScript can change all the HTML elements in the page.
+- JavaScript can change all the HTML attributes in the page.
+- JavaScript can change all the CSS styles in the page.
+- JavaScript can remove existing HTML elements and attributes 
+- JavaScript can new HTML elements and attributes
+- JavaScript can react to all existing HTML events in the page.
 - The events for all HTML elements
 - The Properties of all HTML elements
 - The methods to access all HTML elements
 - All Elements as objects
+
 ## Find the HTML element in 4 ways
 1. getElementById
 2. getElementByClassName
@@ -25,3 +69,5 @@
   - ONKEYDOWN
   - ONBLUR
   - ONLOAD
+
+> The following
