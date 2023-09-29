@@ -1,7 +1,10 @@
-# Table of Contents
-- [DOM](#dom)
-# DOM
-## What's DOM defines?
+#  Table of Contents
+  
+- [DOM](#dom )
+#  DOM
+  
+##  What's DOM defines?
+  
 - JavaScript Dom/document এর সাহায্য HTML এর প্রতিটা element কে manipulate করে |
 - HTML এর element গুলিকে DOM এর সাহায্য Objects  বানিয়ে JavScript manipulate করে
   - Example:
@@ -11,7 +14,7 @@
       console.log(liCollection);
   ```
 >`output`: Array Like object
-![DOM](images/photo2.png)
+![DOM](images/photo2.png )
   - In More:
   `Input::`
   ```sh
@@ -22,7 +25,7 @@
       }
   ```
   `Output:`
-  ![DOM](images/photo3.png)
+  ![DOM](images/photo3.png )
   - In More More Details:
   `Input::`
   ```sh
@@ -33,12 +36,13 @@
       }
   ```
   `Output:`
-  ![DOM](images/photo4.png)
-
-
-
-![DOM](images/photo1.png)
-## What can JavaScript do with DOM? 
+  ![DOM](images/photo4.png )
+  
+  
+  
+![DOM](images/photo1.png )
+##  What can JavaScript do with DOM? 
+  
 - JavaScript can change all the HTML elements in the page.
 - JavaScript can change all the HTML attributes in the page.
 - JavaScript can change all the CSS styles in the page.
@@ -49,20 +53,23 @@
 - The Properties of all HTML elements
 - The methods to access all HTML elements
 - All Elements as objects
-
-## Find the HTML element in 4 ways
+  
+##  Find the HTML element in 4 ways
+  
 1. getElementById
 2. getElementByClassName
 3. getElementByTagName
 4. querySelector & querySelectorAll
-## Dynamic style, getAttribute, setAttribute, innerText, innerHTML
+##  Dynamic style, getAttribute, setAttribute, innerText, innerHTML
+  
 - `style:` document.getElementById("myH1").style.color = "red";
 - `getAttribute:` let text = element.getAttribute("class");
 - `setAttribute:` element.setAttribute("class", "democlass");
 - `innerText:` let text = element.innerText;
 - `innerHTML:` document.getElementById("demo").innerHTML = "I have changed!";
 - `innerHTML:` document.getElementById("demo").innerHTML = "<p>I have changed!</p>";
-## Styling dom properties, add and remove css class using JS
+##  Styling dom properties, add and remove css class using JS
+  
 ```sh
 const sections= document.querySelectorAll('section');
 for (const section of sections){
@@ -74,13 +81,14 @@ for (const section of sections){
 }
 /* const placesContainer=document.getElementById('places-container');
 placesContainer.style.background='blue'; */
-
+  
 /* Add,remove class */
 const placesContainer=document.getElementById('places-container');
 placesContainer.classList.add('yellow-bg');
 placesContainer.classList.remove('large-text');
 ```
-## Event, addEventListener, Event bubble
+##  Event, addEventListener, Event bubble
+  
 1. What's event in JS? Find buttons with event handlers 
 - An Event handler is a routine that deals with the event, allowing a programmer to write code that is executed when the event occurs with the help of event attributes.
 2. event bubbling, event capturing, stop  propagation and event delegation
@@ -94,5 +102,6 @@ placesContainer.classList.remove('large-text');
   - ONKEYDOWN
   - ONBLUR
   - ONLOAD
-
+  
 > The following
+  
