@@ -539,3 +539,112 @@ console.log('Price:',price);
 const result=add('12',45);
 console.log(result); */
 ```
+22. what you can do with JavaScript Object
+```sh
+const student={
+  name:'Bariul',
+  id:201-15-3314,
+  address:'Mirpur-1,Dhaka,Bangladesh',
+  isMarried:false,
+  friends:['Hasan','Benu','Rakib','Labib','Rasel'],
+  movies: [{name:'No.1',year:2020},{name:'King khan',year:2018}],
+  act:function(){
+    console.log('Acting like shakib khan');
+  },
+  car:{
+    brand:'tesla',
+    price:40000000,
+    made:2025,
+    manufacturer:{
+      name:'tesla',
+      ceo:'Elon Mask',
+      country:'USA'
+    }
+  }
+}
+// console.log(student.car);
+console.log(student.act);
+student.act()
+```
+
+23. For of loop
+```sh
+const numbers=[323,434,5,6];
+// traditional process
+for (var i=0; i<numbers.length; i++){
+    console.log(numbers[i]);
+}
+
+//for of loops
+for (const number of numbers){
+    console.log(number);
+}
+```
+24. Find the matching product by searching products
+```sh
+const phones=  [
+    {name:'xiaomi node 7', camera:12,storage:'32gb',price:3600,color:'silver '},
+    {name:'Samsung node 11', camera:12,storage:'32gb',price:3500,color:'silver '},
+    {name:'iphone node 12', camera:12,storage:'32gb',price:3200,color:'silver '},
+    {name:'oppo node 33', camera:12,storage:'32gb',price:3000,color:'silver '},
+    {name:'Nokia node 12', camera:12,storage:'32gb',price:3300,color:'silver '},
+    {name:'HTC node 2', camera:12,storage:'32gb',price:3100,color:'silver '},
+    {name:'Tecno node 1', camera:12,storage:'32gb',price:3900,color:'silver '},
+    {name:'Walton node 9', camera:12,storage:'32gb',price:3700,color:'silver '},
+  ];
+/*  for (const phone of phones){
+   console.log(phone);
+ } */
+  function matchedProduct(phones,search){
+    const matched=[];
+    for (const phone of phones){
+         if(phone.name.toLowerCase().includes(search.toLowerCase())){
+        matched.push(phone);
+      }
+      return matched;
+    }
+  }
+  const result5=matchedProduct(phones,'7');
+  console.log(result5);
+
+
+  //extra problem
+  function compare(a, b) {
+  
+    if (a == b) {
+   
+    return true;
+   
+    } else {
+   
+    return false;
+   
+    }
+   
+   }
+   
+   const result2 = compare(15, "15");
+   
+   console.log(result2);
+   
+   function compare(a, b) {
+  
+    if (a.toString() === b) {
+   
+    return true;
+   
+    } else {
+   
+    return false;
+   
+    }
+   
+   }
+   
+   const result = compare(25, 25);
+   
+   console.log(result);
+   
+   const [a, b] = [1,2,3,4,45,5]; 
+  console.log(a+b);
+```

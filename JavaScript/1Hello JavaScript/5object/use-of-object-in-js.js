@@ -22,5 +22,3 @@ const student={
 // console.log(student.car);
 console.log(student.act);
 student.act()
-
-
