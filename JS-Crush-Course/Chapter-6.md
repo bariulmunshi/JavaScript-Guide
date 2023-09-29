@@ -1,7 +1,7 @@
 - What I learnt from previous Chapter-1 to Chapter-5
 - variable,array,condition,loop,function,object
 # Table of Contents
-# Why Problem solving?
+# Basic Problem solving
 1. /* Problelm-1: The Standard height of a volleyball player is 7 feet. Jim wants to join the volleyball team, so decided to measure his height to see if he meets the standard. Calculate his height in feet.
 input: Jim heiht 84 inch  */
 ```sh
