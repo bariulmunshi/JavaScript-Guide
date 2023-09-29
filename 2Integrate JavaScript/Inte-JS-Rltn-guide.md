@@ -55,6 +55,12 @@
 2. getElementByClassName
 3. getElementByTagName
 4. querySelector & querySelectorAll
+## Dynamic style, getAttribute, setAttribute, innerText, innerHTML
+- style: document.getElementById("myH1").style.color = "red";
+- getAttribute: let text = element.getAttribute("class");
+- setAttribute: element.setAttribute("class", "democlass");
+- innerText: let text = element.innerText;
+- innerHTML: document.getElementById("demo").innerHTML = "I have changed!";
 ## Event, addEventListener, Event bubble
 1. What's event in JS? Find buttons with event handlers 
 - An Event handler is a routine that deals with the event, allowing a programmer to write code that is executed when the event occurs with the help of event attributes.
