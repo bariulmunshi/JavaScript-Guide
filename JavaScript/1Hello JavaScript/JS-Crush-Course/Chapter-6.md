@@ -606,45 +606,4 @@ const phones=  [
   }
   const result5=matchedProduct(phones,'7');
   console.log(result5);
-
-
-  //extra problem
-  function compare(a, b) {
-  
-    if (a == b) {
-   
-    return true;
-   
-    } else {
-   
-    return false;
-   
-    }
-   
-   }
-   
-   const result2 = compare(15, "15");
-   
-   console.log(result2);
-   
-   function compare(a, b) {
-  
-    if (a.toString() === b) {
-   
-    return true;
-   
-    } else {
-   
-    return false;
-   
-    }
-   
-   }
-   
-   const result = compare(25, 25);
-   
-   console.log(result);
-   
-   const [a, b] = [1,2,3,4,45,5]; 
-  console.log(a+b);
 ```
