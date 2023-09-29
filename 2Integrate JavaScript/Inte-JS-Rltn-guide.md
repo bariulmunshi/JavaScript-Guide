@@ -1,5 +1,6 @@
 # Table of Contents
 - [DOM](#dom)
+- [DOM node, NodeList, htmlcollection, parentNode, childnodes, createElement](#dom-node-nodelist-htmlcollection-parentnode-childnodes-createelement)
 # DOM
 ## What's DOM defines?
 - JavaScript Dom/document এর সাহায্য HTML এর প্রতিটা element কে manipulate করে |
@@ -80,6 +81,11 @@ const placesContainer=document.getElementById('places-container');
 placesContainer.classList.add('yellow-bg');
 placesContainer.classList.remove('large-text');
 ```
+## DOM node, NodeList, htmlcollection, parentNode, childnodes, createElement
+![Node-Structure](images/photo5.png)
+- DOM node: Tags are element nodes (or just elements) and form the tree structure: `<html>` is at the root, then `<head>` and `<body>` are its children, etc. The text inside elements forms text nodes, labelled as #text . A text node contains only a string. It may not have children and is always a leaf of the tree.
+- NodeList: Elements_NODE,ATTRIBUTE_NODE,TEXT_NODE etc.
+- 
 ## Event, addEventListener, Event bubble
 1. What's event in JS? Find buttons with event handlers 
 - An Event handler is a routine that deals with the event, allowing a programmer to write code that is executed when the event occurs with the help of event attributes.
