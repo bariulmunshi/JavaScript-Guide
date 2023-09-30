@@ -83,9 +83,50 @@ placesContainer.classList.remove('large-text');
 ```
 ## DOM node, NodeList, htmlcollection, parentNode, childnodes, createElement
 ![Node-Structure](images/photo5.png)
-- DOM node: Tags are element nodes (or just elements) and form the tree structure: `<html>` is at the root, then `<head>` and `<body>` are its children, etc. The text inside elements forms text nodes, labelled as #text . A text node contains only a string. It may not have children and is always a leaf of the tree.
-- NodeList: Elements_NODE,ATTRIBUTE_NODE,TEXT_NODE etc.
-- 
+- `DOM node:` Tags are element nodes (or just elements) and form the tree structure: `<html>` is at the root, then `<head>` and `<body>` are its children, etc. The text inside elements forms text nodes, labelled as #text . A text node contains only a string. It may not have children and is always a leaf of the tree.
+- `NodeList:` Elements_NODE,ATTRIBUTE_NODE,TEXT_NODE etc.
+- `childNodes:` const nodeList = document.body.childNodes;let numb = document.getElementById("myDIV").childNodes.length; let text = document.getElementById("mySelect").firstChild.text;
+let text = document.getElementById("mySelect").childNodes[2].text; let text = document.getElementById("mySelect").childNodes[2].childNodes[0].text;
+- `createElement:` const para = document.createElement("p"); para.innerText = "This is a paragraph";document.body.appendChild(para);
+or,
+const para = document.createElement("p");
+para.innerHTML = "This is a paragraph.";
+document.getElementById("myDIV").appendChild(para);
+- `parentNode:` let name = document.getElementById("myLI").parentNode.nodeName;
+## Create HTML elements using Javascript and appendChild
+```sh
+/* ===Example-1======== */
+//step-1:where to add
+const placesList=document.getElementById('places-list');
+// step-2: what to be added
+const li=document.createElement('li');
+li.innerText='pahartolibon';
+// step-3: add the child
+placesList.appendChild(li);
+
+/* ===Example-2======== */
+// 1-where to add
+const mainContainer=document.getElementById('main-content');
+// 2-what to be added 
+const section=document.createElement('section');
+mainContainer.appendChild(section);
+const h1=document.createElement('h1');  //what to add
+h1.innerText='My food list';
+section.appendChild(h1);
+
+/* ===Example-3======== */
+//set inner html directly
+const sectionDress=document.createElement('section');
+sectionDress.innerHTML=`
+<h1>My dress section</h1>
+<ul>
+  <li>T-shirt</li>
+  <li>Lungi</li>
+  <li>pajama</li>
+</ul>
+`
+mainContainer.appendChild(sectionDress);
+```
 ## Event, addEventListener, Event bubble
 1. What's event in JS? Find buttons with event handlers 
 - An Event handler is a routine that deals with the event, allowing a programmer to write code that is executed when the event occurs with the help of event attributes.
