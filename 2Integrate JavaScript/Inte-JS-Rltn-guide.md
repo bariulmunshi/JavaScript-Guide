@@ -3,6 +3,7 @@
   - [DOM node, NodeList, htmlcollection, parentNode, childnodes, createElement](#dom-node-nodelist-htmlcollection-parentnode-childnodes-createelement)
   - [What can JavaScript do with DOM?](#what-can-javascript-do-with-dom)
 - [Event, addEventListener, Event bubble](#event-addeventlistener-event-bubble)
+  - [What is Event, different types of event in web](#what-is-event-different-types-of-event-in-web)
 # DOM
 ## What's DOM defines?
 - DOM stands for: Document(file) object(elements) Model(layout structure)
@@ -138,23 +139,63 @@ sectionDress.innerHTML=`
 mainContainer.appendChild(sectionDress);
 ```
 # Event, addEventListener, Event bubble
-- When to use what:
+## When to use what:
   - `onClick():` যখন তুমি কোনো simple একটা sinario নিয়ে কাজ করছো এবং একটি HTML element এর জন্য শুধুমাত্র একটি click event নিয়ে কাজ করতে হবে, তখন onClick() ব্যবহার করা তোমার জন্য better option হবে।
   - `addEventListener() :`যখন তুমি তোমার event গুলোর উপর আরও বেশি নিয়ন্ত্রণ চাচ্ছ। This is especially useful when you need to handle multiple events on the same element, or when you might need to remove event handlers later. It's a more robust approach that allows for greater flexibility and cleaner code.
 - More in Details:
   - [Source](https://chaytisaha98.medium.com/onclick-vs-addeventlistener-6f4cb4a7557f)
-1. What's event in JS? Find buttons with event handlers 
+## What's event in JS? Find buttons with event handlers 
 - An Event handler is a routine that deals with the event, allowing a programmer to write code that is executed when the event occurs with the help of event attributes.
-2. event bubbling, event capturing, stop  propagation and event delegation
+## event bubbling, event capturing, stop  propagation and event delegation
 - event capturing is the event starts from top element to the target element.
 - The stop propagation() method of the event interface prevents further propagation of the current event in the capturing and bubbling phases.
 
-2. some javascript events:
+## some javascript events:
   - ONCHANGE
   - ONCLICK
   - ONMOUSEOVER
   - ONKEYDOWN
   - ONBLUR
   - ONLOAD
+## What is Event, different types of event in web
+1. Direct Use:
+   - `<button onclick="console.log(7)">Click Me</button>`
+   - `<button onclick="document.body.style.background='yellow'">Make yellow</button>`
+2. Using Function with declaration:(usable)
+   - step-1: `<button onclick="makeRed()">Make red</button>`
+   - step-2:`function makeRed() {document.body.style.background='red';}`
+3. Using Function without declaration:
+    ```sh
+    const makeBlueButton=document.getElementById("make-blue");
+            makeBlueButton.onclick=makeBlue;
 
+            function makeBlue() {
+                document.body.style.background='blue';
+            }
+            or,
+    const purpleButton=document.getElementById('make-purple')
+    purpleButton.onclick=function makePurple(){
+      document.body.style.background='purple';
+    }
+    ```
+4. Using addEventListener:
+```sh
+const pinkBtn=document.getElementById('make-pink');
+pinkBtn.addEventListener('click',makePink);
+function makePink(){
+  document.body.style.backgroundColor='pink';
+}
+
+or(shorthand),
+const greenBtn=document.getElementById('make-green');
+greenBtn.addEventListener('click',function makeGreen(){
+  document.body.style.backgroundColor='green';
+})
+
+or(finally most usable shorthand),
+/* option-4: final onclick (important we will use it) */
+document.getElementById('make-goldenRod').addEventListener('click',function (){
+    document.body.style.backgroundColor='goldenrod';
+  })
+```
 > The following
