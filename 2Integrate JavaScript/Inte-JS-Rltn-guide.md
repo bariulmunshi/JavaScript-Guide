@@ -158,6 +158,7 @@ mainContainer.appendChild(sectionDress);
   - ONBLUR
   - ONLOAD
 ## What is Event, different types of event in web
+- mouse events, touch events,keyboard events,form events,DOM/UI events
 1. Direct Use:
    - `<button onclick="console.log(7)">Click Me</button>`
    - `<button onclick="document.body.style.background='yellow'">Make yellow</button>`
@@ -198,4 +199,6 @@ document.getElementById('make-goldenRod').addEventListener('click',function (){
     document.body.style.backgroundColor='goldenrod';
   })
 ```
+## What's callback function?
+![Callback function](images/photo6.png)
 > The following
