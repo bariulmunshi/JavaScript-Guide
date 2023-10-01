@@ -3,7 +3,7 @@ document.getElementById('withDraw-btn').addEventListener('click',function(){
   const withdrawField=document.getElementById('withDraw-input');
   const newWithdrawAmountString=withdrawField.value;
   const newWithdrawAmount=parseFloat(newWithdrawAmountString);
-  withdrawField.value=''; //clear the deposit field
+  withdrawField.value=''; //clear the deposit field 
 
   //for output
   const withdrawTotalElement=document.getElementById('withdraw-total');

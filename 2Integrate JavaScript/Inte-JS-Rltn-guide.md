@@ -199,6 +199,10 @@ document.getElementById('make-goldenRod').addEventListener('click',function (){
     document.body.style.backgroundColor='goldenrod';
   })
 ```
+- Page Navigation:
+ ```sh
+ window.location.href='bank.html';
+ ```
 ## What's callback function?
 ![Callback function](images/photo6.png)
 > The following
