@@ -1,4 +1,4 @@
-//step-1: add click event handler with the submit btn
+ //step-1: add click event handler with the submit btn
 document.getElementById('submit-btn').addEventListener('click',function(){
   //step-2: email address inside the email input field 
   const emailField=document.getElementById('user-email');
@@ -15,3 +15,16 @@ document.getElementById('submit-btn').addEventListener('click',function(){
    alert('invalid User');
   }
 })
+
+ 
+/* document.getElementById("submit-btn").addEventListener("click", function(){
+  const emailField=document.getElementById("user-email");
+  const email=emailField.value;
+  const passwordField=document.getElementById("user-password");
+  const password=passwordField.value;
+  if(email==="bariulsoft@gmail.com" && password==="bariulsoft"){
+    window.location.href="bank.html"
+  }else{
+    alert("Please enter valid");
+  }
+}); */
