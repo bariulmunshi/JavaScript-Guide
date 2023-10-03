@@ -205,4 +205,39 @@ document.getElementById('make-goldenRod').addEventListener('click',function (){
  ```
 ## What's callback function?
 ![Callback function](images/photo6.png)
+
+### Three ways to validate input data
+1. Make `input type as number`
+2. check type of input: type of  number, string
+   ```sh
+   
+   ```
+3. NaN means Not a Number:  isNaN is checking whether the input is not a number or not
+   ```sh
+   if(isNaN(width)){
+        // console.log('width is not a number')
+        alert('Please enter a number');
+        return;
+    }
+   ```
+
+### Create Dynamic HTML
+  ```sh
+  step-1: 
+   <div id="calculation-entry">
+                  
+                </div>
+  step-2:
+  function calculateParallelogramArea(){
+  addToCalculationEntry("Parallelogram",area);}
+  step-2:
+  // add to calculation entry 
+ function addToCalculationEntry(areaType,area){
+    console.log(areaType+" "+area);
+    const calculationEntry = document.getElementById('calculation-entry')
+    const p=document.createElement('p')
+    p.innerHTML=areaType+" "+ area;
+    calculationEntry.appendChild(p);
+}
+  ```
 > The following
