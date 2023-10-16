@@ -1,4 +1,6 @@
 /* Arrow function, multiple parameter, function body */
+//what's array function?
+/* Array function has shorter syntax than regular function */
 // Traditional function syntax
 /* function add(a, b) {
   return a + b;

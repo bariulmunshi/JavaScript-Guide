@@ -1,4 +1,8 @@
 /* Template string, multiple line string, dynamic string */
+// what's templates string?
+/* 
+Template string বেবহার  করে খুব সহজেই multi-line string লিখা যায় এবং string এর ভিরতে variable ও add করা যায় খুব সহজেই ।
+*/
 const person='Adam Sand'; // use of single quotation 
 const person2="Ben White"; //use of double quotation
 const person3=`Donald Trump`; //use of backtick

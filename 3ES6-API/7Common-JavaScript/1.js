@@ -11,7 +11,18 @@ undefined // you didn't bring your homework
 
 
 /* Different Truthy and Falsy values in JavaScript */
-
+/* truthy, false Ternary operator, shortcut and or */
+//'abc', 5, true,{},[]
+//'',0,false, null, undefined
+let myVar=4;
+//check any truthy 
+if(myVar) {
+  myVar=myVar*332;
+}
+else{
+  myVar=0;
+}
+let myMoney=50;  
 
 /* double equal (==) vs triple equal (===), implicit conversion */
 // double equal> check value

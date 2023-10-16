@@ -1,3 +1,4 @@
+//Inheritance prototypical inheritance
 /* Inheritance, extends class, super, class method */
 /* The extends keyword is used in class declarations or class expressions to create a class that is a child of another class. */
 class TeamMember{ //parent of Instructor class

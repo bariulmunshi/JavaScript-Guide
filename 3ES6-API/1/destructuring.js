@@ -1,4 +1,7 @@
 /* Object and Array Destructuring */
+/* What's destructuring?
+Array/object থেকে multiple data কে extract করে আনা কে destructuring বলে ।
+*/
 /* const fish={
   name:'Hilsha king',
   address:'chadpur',

@@ -1,3 +1,4 @@
+// Introduction to Class and objects
 //syntactic sugar
 class Instructor{
   name; //dynamic properties different from every object
@@ -15,6 +16,7 @@ class Instructor{
     console.log(`Please create quiz for module ${module}`)
   }
 }
+// instance=কোনো বস্তুর একটি নির্দিষ্ট উপলব্ধি or 	উদাহরণ, ঘটনা, নজির,দৃষ্টান্ত
 //create instance from instructor class 
 const  amir=new Instructor(); //get object without constructor from class & required new keyword
 console.log(amir);
