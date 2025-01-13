@@ -11,7 +11,7 @@ var isHappy=true;
 var romantic;
 console.log(typeof romantic); //undefined 
 
-//toFixed
+//toFixed 
 var num1 =0.2;
 var num2 =0.3;
 var sum =num1 + num2;
